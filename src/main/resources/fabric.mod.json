@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "jacks_mobs",
+	"version": "${version}",
+	"name": "Jacks_Mobs",
+	"description": "The New and Improved Mobs Mod.",
+	"authors": [
+		"_Fartman_"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/jacks_mobs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jack.mobsmod.jacksMobs"
+		],
+		"client": [
+			"net.jack.mobsmod.jacksMobsClient"
+		],
+		"fabric-datagen": [
+			"net.jack.mobsmod.jacksMobsDataGenerator"
+		]
+	},
+	"mixins": [
+		"jacks_mobs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
