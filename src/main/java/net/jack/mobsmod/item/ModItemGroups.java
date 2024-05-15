@@ -17,6 +17,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ENDGUIN_BEAK);
                         entries.add(ModItems.ENDGUIN_FEATHER);
                         entries.add(ModItems.ENDGUIN_SPAWN_EGG);
+                        entries.add(ModItems.END_AXE);
 
                     }).build());
 

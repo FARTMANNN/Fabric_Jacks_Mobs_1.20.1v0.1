@@ -22,6 +22,11 @@ public class ModItems {
     public static final Item ENDGUIN_SPAWN_EGG = registerItem("endguin_spawn_egg",
             new SpawnEggItem(ModEntities.ENDGUIN, 0x1b1c26, 0xe4efae, new FabricItemSettings()));
 
+    public static final Item END_AXE = registerItem("end_axe",
+            new Item(new FabricItemSettings().maxCount(1)));
+
+
+
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(ENDGUIN_BEAK);
         entries.add(ENDGUIN_FEATHER);
