@@ -1,4 +1,6 @@
 {
   "item.jacks_mobs.endguin_beak": "Endguin Beak",
-  "item.jacks_mobs.endguin_feather": "Endguin Feather"
+  "item.jacks_mobs.endguin_feather": "Endguin Feather",
+
+  "itemgroup.mobmod": "Jack's Mobs"
 }

@@ -60,7 +60,7 @@ public class EndguinEntity extends AnimalEntity {
         this.goalSelector.add(0, new SwimGoal(this));
 
         this.goalSelector.add(1, new AnimalMateGoal(this, 1.150));
-        this.goalSelector.add(2, new TemptGoal(this, 2, Ingredient.ofItems(Items.CHORUS_FRUIT), false));
+        this.goalSelector.add(2, new TemptGoal(this, 1.5, Ingredient.ofItems(Items.CHORUS_FRUIT), false));
         this.goalSelector.add(3, new FollowParentGoal(this, 1.150));
         this.goalSelector.add(4, new WanderAroundFarGoal(this, 1D));
         this.goalSelector.add(5, new LookAtEntityGoal(this, PlayerEntity.class, 4f));
@@ -71,7 +71,7 @@ public class EndguinEntity extends AnimalEntity {
     public static DefaultAttributeContainer.Builder createEndguinAttributes() {
         return MobEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 10)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 1f);
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.25f);
     }
 
     @Override
