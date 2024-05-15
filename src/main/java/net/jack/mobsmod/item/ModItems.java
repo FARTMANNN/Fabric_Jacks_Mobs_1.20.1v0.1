@@ -12,9 +12,11 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item ENDGUIN_BEAK = registerItem("endguin_beak", new Item(new FabricItemSettings()));
+    public static final Item ENDGUIN_FEATHER = registerItem("endguin_feather", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(ENDGUIN_BEAK);
+        entries.add(ENDGUIN_FEATHER);
     }
 
     private static Item registerItem(String name, Item item) {
