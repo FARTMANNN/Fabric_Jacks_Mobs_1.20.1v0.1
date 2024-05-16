@@ -5,9 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.jack.mobsmod.entity.ModEntities;
 import net.jack.mobsmod.jacksMobs;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -23,7 +21,7 @@ public class ModItems {
             new SpawnEggItem(ModEntities.ENDGUIN, 0x1b1c26, 0xe4efae, new FabricItemSettings()));
 
     public static final Item END_AXE = registerItem("end_axe",
-            new Item(new FabricItemSettings().maxCount(1)));
+            new AxeItem(ToolMaterials.NETHERITE, 8, 1f, new FabricItemSettings().maxCount(1)));
 
 
 

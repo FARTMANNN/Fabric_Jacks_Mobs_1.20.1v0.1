@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " BE",
+    " SF",
+    "S  "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "jacks_mobs:endguin_beak"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "F": {
+      "item": "jacks_mobs:endguin_feather"
+    }
+  },
+  "result": {
+    "item": "jacks_mobs:end_axe"
+  }
+}
