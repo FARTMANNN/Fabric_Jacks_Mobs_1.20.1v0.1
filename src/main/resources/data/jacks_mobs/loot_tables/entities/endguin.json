@@ -7,12 +7,12 @@
         {
           "type": "minecraft:item",
           "name": "jacks_mobs:endguin_feather",
-          "weight": 5
+          "weight": 95
         },
         {
           "type": "minecraft:item",
           "name": "jacks_mobs:endguin_beak",
-          "weight": 1
+          "weight": 5
         }
       ],
       "conditions": [
