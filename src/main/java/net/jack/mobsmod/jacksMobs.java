@@ -7,8 +7,7 @@ import net.jack.mobsmod.entity.ModEntities;
 import net.jack.mobsmod.entity.custom.EndguinEntity;
 import net.jack.mobsmod.item.ModItemGroups;
 import net.jack.mobsmod.item.ModItems;
-import net.jack.mobsmod.world.gen.ModEntityGeneration;
-import net.jack.mobsmod.world.gen.ModWorldGeneration;
+import net.jack.mobsmod.world.gen.ModWorldGen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,6 +20,6 @@ public class jacksMobs implements ModInitializer {
         FabricDefaultAttributeRegistry.register(ModEntities.ENDGUIN, EndguinEntity.createEndguinAttributes());
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
-		ModWorldGeneration.generateModWorldGen();
+		ModWorldGen.generateWorldGen();
 	}
 }
