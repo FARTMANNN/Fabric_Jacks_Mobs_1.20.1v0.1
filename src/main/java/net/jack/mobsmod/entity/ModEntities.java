@@ -14,5 +14,5 @@ import net.minecraft.util.Identifier;
 public class ModEntities {
     public static final EntityType<EndguinEntity> ENDGUIN = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(jacksMobs.MOD_ID, "endguin"),
-            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, EndguinEntity::new).dimensions(EntityDimensions.fixed(0.75f, 0.75f)).build());;
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, EndguinEntity::new).dimensions(EntityDimensions.fixed(0.75f, 0.75f)).build());
 }
