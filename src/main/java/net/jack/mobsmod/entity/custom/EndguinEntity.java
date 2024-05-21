@@ -7,7 +7,6 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
@@ -29,7 +28,7 @@ public class EndguinEntity extends AnimalEntity {
     }
 
 
-    private void setupAnimationSates() {
+    private void setupAnimationStates() {
         if (this.idleAnimationTimeout <= 0) {
             this.idleAnimationTimeout = this.random.nextInt(40) + 80;
             this.idleAnimationState.start(this.age);
@@ -49,7 +48,7 @@ public class EndguinEntity extends AnimalEntity {
         super.tick();
         if (this.getWorld().isClient()) {
             setupAnimationStates();
-            ;
+
         }
     }
 
@@ -59,7 +58,6 @@ public class EndguinEntity extends AnimalEntity {
     @Override
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
-
         this.goalSelector.add(1, new AnimalMateGoal(this, 1.150));
         this.goalSelector.add(2, new TemptGoal(this, 1.5, Ingredient.ofItems(Items.CHORUS_FRUIT), false));
         this.goalSelector.add(3, new FollowParentGoal(this, 1.150));
